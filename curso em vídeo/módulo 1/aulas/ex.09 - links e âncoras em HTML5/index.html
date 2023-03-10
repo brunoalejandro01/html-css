@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Links e âncoras em HTML5</h1>
+    <p>03/08/2022</p>
+    <hr>
+    <h2>Usando links externos nos meus sites</h2>
+    <p>
+        é possível, obviamente, usar links internos dentro dos sites que eu faço, tais links levaram o usuário para outros sites já feitos. Para isso, usa-se a tag &lt;a&gt;, que vai possibilitar colocar um link no seu site, tal link pode ser atrelado a uma palavra, que vai agora possuir uma função além da textual, vai também ser um hyperlink. 
+    </p>
+    <p>
+        OBS: é recomendado que ao usar links internos, tais links abram seus respectivos sites em uma outra aba, e não que abram por site do meu site. O que evita que o usuário não acesse mais meu site.
+        <br>
+        Para conseguir realizar tal função, além do link do site é necessário usar as palavras reservadas <i>target</i>, juntamente com a opção <i>_blank</i> e a outra palavra reservada <i>rel</i>, juntamente com a opção <i>external</i>. 
+    </p>
+    <p>
+        exemplo: você pode acessar o <a href="https://sociofortaleza.com.br/" target="_blank" rel="external">site do sócio fortaleza</a> aqui!
+    </p>
+    <p> <b>OBS:</b>
+        <ul></ul>
+        <li>Target: o target é um atributo que vai indicar ao navegador onde o site de destino vai abrir</li>
+        <ul type="circle">
+            <li><i>target _blank:</i> indica ao navegador que o link deve ser aberto em outra janela.</li>
+            <li><i>target _self:</i> indica ao navegador que o link deve ser aberto na janela ou frame atual, é recomendado quando o link vai levar o usuário a outras páginas dentro do meu site.</li>
+        </ul>
+        <li>Rel: o rel é outro atributo que vai indicar ao navegador qual o destino do link que foi colocado</li>
+        <ul type="circle">
+            <li><i>rel next:</i> indica ao navegador que o link é para próxima parte do documento atual</li>
+            <li><i>rel prev:</i> indica ao navegador que o link é para a parte anterior do documento atual</li>
+            <li><i>rel external:</i> indica ao navegador que o link é para ser aberto em outro site e não no site atual</li>
+            <li><i>rel unfollow:</i> é um tipo de rel que vai indicar ao navegador que o link que foi colocado não recebe o aval do criador do site, esse tipo de rel é indicado quando o link que vai ser colocado não é muito confiável ou quando é um link para fazer propaganda, um link pago para está ali naquele site.</li>
+        </ul>
+    </p>
+    <h2>Usando links internos em meu site</h2>
+    <p>
+        Esta é a primeira página do meu site, para acessar a segunda página do meu site você pode clicar <a href="pag02.html" rel="next" target="_self">aqui!</a>
+    </p>
+    <p>
+        Para criar uma segunda página no próprio site, basta criar um novo arquivo, também html, dentro do arquivo principal. Após isso, o VSC vai criar uma segunda aba HTML. Agora, para que o usuário consiga acessar a próxima página, basta usar a tag &lt;a&gt; vinculado a uma palavra para transformá-la em hyperlink. Feito isso, víncule a palavra escolhida para servir como hyperlink o arquivo referente a segunda página do meu site por meio do atalho Ctrl + barra de espaço, por fim, lembrar de colocar as palavras reservadas <q>target</q> e <q>rel</q>. 
+        <br>
+        <br>
+        OBS: lembrar de usar o atalho Ctrl + barra de espaço para escolher o arquivo da segunda página dentro da tag &lt;a&gt;. 
+    </p>
+    <p>
+        O processo anterior também pode ser feito na segunda página para que o usuário consiga voltar para a página principal, sendo necessário somente a criação de um hyperlink vinculado a uma palavra escolhida, feito isso, basta usar o atalho Ctrl + barra de espaço e escolher o arquivo referente a primeira página.
+    </p>
+    <h2>Criando uma página em pasta</h2>
+    <p>
+        É possível também criar novas páginas no meu site por meio de diferentes pastas. Ou seja, dentro da pasta principal, onde encontra-se o arquivo html do meu site, eu posso criar uma nova pasta. Feito isso, na aba explorador do VSC, vai estar a nova pasta que foi criada, nela, deve-se criar um novo arquivo, também html. 
+    </p>
+    <p>
+        Para ir da página principal ou de qualquer outra página para essa nova página feita em uma pasta é necessário usar, também, o atalho Ctrl + barra de espaço. Esse comando deve ser usado tanto para ir como para voltar dessa nova página.
+    </p>
+    <p>
+        Essa é minha página de notícias, você pode acessar ela <a href="noticias/pag03.html" rel="next" target="_self">aqui!</a> 
+    </p>
+    <p>
+        <b>OBS:</b> quando uma nova página é feita em uma pasta diferente, pra voltar dessa página para a página principal, por exemplo, o comando é diferente, não da mais para usar o atalho Ctrl + barra de espaço. Portanto, vamos usar um novo comando, que é o dois pontos + barra, <i>../</i>, esse comando serve quando queremos transitar entre diferentes pastas e é usado nesse tipo de situação.
+    </p>
+</body>
+</html>

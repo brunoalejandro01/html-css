@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citações e códigos - outros tipos de formatação</title>
+</head>
+<body>
+    <h1>Outros tipos de formatação de texto</h1>
+    <p>02/08/2022</p>
+    <hr>
+    <h2>Código fonte ou pré-formatação</h2>
+    <p>
+        Nessa formatação, é possível adaptar o texto escrito para colocá-lo em formato de código. Usa-se a tag &lt;code&gt;.
+        <br>
+        exemplo: <code>document.getElementById("teste").</code>
+        <br>
+        <br>
+        O comando &lt;code&gt; é escrito em linguagem JS.
+        Contudo, nem sempre ao escrever uma linha de código no VSC o código sairá formatado, se isso acontecer, é possível usar a tag &lt;pre&gt; junto com a &lt;code&gt;
+        <br>
+        <pre>
+            <code>
+                    num = int(input('digite um número'))
+                    if num % 2 == 0:
+                    print(f'O número (num) é PAR)
+                    else:
+                    print(f'O número (num) é ímpar)
+                    print('Fim do programa')
+            </code>
+        </pre> 
+    </p>
+    <h2>Citações simples</h2>
+    <p>
+        Para demonstrar citações é possível usar a tag &lt;q&gt;. Também é possível simplesmente colocar as aspas normalmente, porém para citações é recomendado o uso da tag.
+        <br>
+        exemplo: <q>é jogo de futebol vojvoda não é levantamento de peso não</q>
+    </p>
+    <h2>Citações completas</h2>
+    <p>
+        Nesse caso, pode-se inserir citações em bloco, pegar um texto de algum site, por exemplo e colocar esse texto dentro da tag &lt;blockquote&gt;. Além disso, pode-se usar a palavra reservada "cite", que serve para colocarmos o link ou a fonte da citação para que o navegador relacione a citação com sua fonte, sendo mais fácil para encontrá-la. 
+    </p>
+    <h2>Abreviações</h2>
+    <p>
+        Nessa formatação, é possível criar pop-ups nas abreviações para que, ao usuário passar o mouse sobre a abreviação, por exemplo, o significado da palavra apareça na tela. Usa-se a tag &lt;abbr&gt;.
+        <br>
+        exemplo: Estou estudando <abbr title="Hypertext Markup Language"> HTML</abbr>
+    </p>
+</body>
+</html>

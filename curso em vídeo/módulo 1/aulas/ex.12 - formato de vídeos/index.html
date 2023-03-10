@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedando vídeos no meu site</title>
+</head>
+<body>
+    <h1>Aprendendo a colocar vídeos no meu site</h1>
+    <p>
+        09/08/2022
+    </p>
+    <hr>
+    <p>
+        Para colocar vídeos no meu site é bem simples, basta fazer uso de uma nova tag, a &lt;video&gt;, porém antes de colocar o vídeo em si, vamos fazer algumas observações.
+    </p>
+    <p> <strong>Observações</strong>
+        <ul>
+            <li>
+                Nem todo navegador vai aceitar somente o formato de vídeo mp4, por exemplo, assim, é necessário consultar quais formatos cada navegador é compatível.
+                <ul>
+                    <li>Microsoft Edge - mp4 e m4v</li>
+                    <li>Safari - mp4 e m4v</li>
+                    <li>Chrome - mp4, m4v, webm e ogv</li>
+                    <li>Firefox - webm e ogv</li>
+                    <li>Opera - webm e ogv</li>
+                </ul>
+            </li>
+            <li>É de extrema importância prezar por arquivo de vídeos com tamanho reduzido, para evitar deixar o site lento.</li>
+            <li>Sempre hospedar vídeos em mais de um formato, para que seja possível que ele seja aberto em diferentes navegadores.</li>
+        </ul>
+    </p>
+    <p>
+        Agora, vamos colocar o vídeo no site, mas antes vamos fazer algumas explicações sobre alguns atributos que acompanha a tag &lt;video&gt;.
+        <ul>
+            <li>width: vai indicar a largura da tela do vídeo na tela do usuário.</li>
+            <li>poster: adiciona uma imagem a tela inicial do vídeo, ou seja, uma capa para o vídeo.</li>
+            <li>controls: adiciona um painel de controle no vídeo, sempre importante colocar.</li>
+            <li>autoplay: configura o vídeo para ser exibido automaticamente assim que a página for carregada</li>
+        </ul>
+        Por fim, ao colocar mais de um tipo de formato de vídeo, lembrar de usar dentro da tag &lt;video&gt; o &lt;source:src&gt; e no type colocar <i>video/formato do vídeo</i>.
+    </p>
+    <video width="500" controls poster="imagem/tumble.png">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.m4v" type="video/m4v">
+    </video>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando links para download</title>
+</head>
+<body>
+    <h1>Como criar links para download no meu site</h1>
+    <p>
+        04/08/2022
+    </p>
+    <hr>
+    <p>
+        Para colocar um link com arquivo para download em um site é bem simples, basta usar a tag &lt;a&gt;. Nela vamos colocar o arquivos, ou os arquivos, que vamos disponibilizar aos usuários para serem baixados.
+        <br>
+        <b>OBS:</b> certos navegadores ao invés de baixarem o arquivo, vão somente abrí-lo, nesse caso, podemos usar dois comandos, o primeiro é o <i>download</i>, que vai receber o nome do arquivo que foi colocado, e o segundo comando é o <i>type</i>, que vai receber parâmetros como <q>application/pdf</q>, para arquivos PDF, ou o <q>application/zip</q>, que recebe arquivos ZIP. Tais comandos devem estar juntos com a tag &lt;a&gt;.
+    </p>
+    <p>
+        Exemplo
+        <ul>
+            <li><a href="livros/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf" target="_blank">Baixar o livro em PDF</a></li>
+            <li><a href="livros/10 - Ligações em toda parte.zip" download="10 - ligações em toda parte.zip" type="application.zip">Baixar o livro compactado em arquivo ZIP</a></li>
+        </ul>
+    </p>
+</body>
+</html>

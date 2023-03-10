@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags</title>
+</head>
+<body>
+    <h1>Tags em HTML e CSS</h1>
+    <p>
+        10/08/2022
+    </p>
+    <hr>
+    <ul>
+        <b>Títulos</b>
+        <li>Usa-se a tag &lt;h1&gt; até a &lt;h6&gt;, sendo a &lt;h1&gt; a de maior importância, utilizada para o título principal, por exemplo, e a &lt;h6&gt; a de menor importância.</li>
+        <br>
+        <b>Parágrafos</b>
+        <li>Usa-se a tag &lt;p&gt;.</li>
+        <br>
+        <b>Espaço entre as linhas ou quebra de linhas</b>
+        <li>Usa-se a tag &lt;br&gt;</li>
+        <br>
+        <b>Adicionar uma linha horizontal</b>
+        <li>Usa-se a tag &lt;h&gt;</li>
+        <br>
+        <b>Inserindo emojis</b>
+        <li>Para inserir emojis basta ir em algum site que disponibilize emojis para emojis para baixar, como o <a href="emojipedia.org">emojipedia</a>, nele, basta escolher um emoji e clicar no seu <i>codepoints</i>, com o código do emoji em mãos, exemplo: U+1F604, basta substituir esse U+ por &#x no código.</li>
+        <br>
+        <b>Inserindo imagens</b>
+        <li>Para inserir uma imagem basta usar a tag &lt;img&gt;, nela serão criado dois parâmetros, o primeiro será o <i>src</i> que é onde vamos inserir o arquivo de imagem, e o segundo será o <i>alt</i>, que é onde coloca-se um texto alternativo, no caso da imagem não carregar, que é de suma importância por conta da acessibilidade, então é importante fazer uma boa descrição da imagem.</li>
+        <ul>
+            <li>é possível também inserir imagens que estão em pastas diferentes, contanto que essa pasta esteja dentro da pasta onde está o arquivo html principal. Nesse caso, para ter acesso a essa segunda pasta, basta usar o atalho <i>Ctrl + barra de espaço</i> dentro do <i>src</i> e escolher a pasta que contém a imagem.</li>
+            <li>além disso, também é possível pegar o link da imagem e inserir diretamente na tag.</li>
+        </ul>
+        <br>
+        <strong>OBS:</strong> sempre se atentar para dois fatores quando for utilizar imagens em meu site
+        <ul>
+            <li>a maioria das imagens possuem direitos autorais, portanto, sempre optar por imagens de autoria própria ou do cliente, ou usar banco de imagens que não possuam direitos autorais, como em sites como o <i>pexels</i> ou o <i>UnSplash</i>.</li>
+            <li>outro ponto importante é estar atento ao formato da imagem e seu tamanho. No caso do formato, sempre optar pelo JPEG, com uma compactação entre 30% e 50%. O formato PNG é recomendado em casos no qual a imagem precisa de transparência.</li>
+            <li>lembrar de adaptar o tamanho da imagem por meio de aplicativos de edição, como o gimp.</li>
+        </ul>
+        <br>
+        <strong>Inserindo favicons</strong>
+        <li>Favicons são aquele pequeno símbolo que fica na aba do site, para colocar em meu site basta usar a tag &lt;link&gt; e escolher a opção <i>link:favicon</i>, dentro dessa tag vão existir três parâmetros, no primeiro não se mexe, já no segundo é onde colocaremos nosso favicon, ele já vem com um por padrão, portanto basta apagar e colocar o meu favicon, no último também não se mexe.</li>
+        <ul>
+            <li>o principal formato para o favicon é o .ico, mas o PNG também é aceito.</li>
+            <li>site para achar um favicon: iconArchive</li>
+            <li>site para desenhar seu próprio favicon: favicon.cc</li>
+            <li>site para criar um favicon personalizado: favicon.io</li>
+        </ul>
+        <br>
+        <strong>Criar um lorem</strong>
+        <li>Basta escrever &lt;lorem&gt;.</li>
+        <br>
+        <strong>Deixar a palavra em negrito</strong>
+        <li>Basta usar a tag &lt;stron&gt;.</li>
+        <br>
+        <strong>Deixar a palavra em italico</strong>
+        <li>Basta usar a tag &lt;em&gt;.</li>
+        <br>
+        <strong>Deixar as letras pequenas</strong>
+        <li>Usa-se a tag &lt;small&gt;.</li>
+        <br>
+        <strong>Texto deletado</strong>
+        <li>Usa-se a tag &lt;del&gt;, esse tipo de comando é recomendado quando o texto pode até ser lido, mas deve ser desconsiderado.</li>
+        <br>
+        <strong>Texto inserido</strong>
+        <li>Usa-se a tag &lt;ins&gt;, nesse caso, esse comando é recomendado quando é necessário dar mais atenção ao texto ali marcado.</li>
+        <br>
+        <strong>Texto sobrescrito e subscrito</strong>
+        <li>Para o texto sobrescrito usa-se a tag &lt;sup&gt; e para o texto subscrito usa-se a tag &lt;sub&gt;.</li>
+        <br>
+        <strong>Trechos de código</strong>
+        <li>Quando formos inserir linhas de código no HTML é necessário usar as tags &lt;pre&gt; e &lt;code&gt; juntas, assim o código vai ficar pré-formatado e de fácil leitura.</li>
+        <br>
+        <strong>Citações</strong>
+        <li>Usa-se a tag &lt;q&gt;. Para citações em bloco usa-se a tag &lt;blockquote&gt;. A diferença entre elas é que a primeira não ganha recuo de texto, já na segunda existe o recuo. Ainda é possível usar a tag &lt;cite&gt; dentro da &lt;blockquote&gt; para colocar o link da citação.</li>
+        <br>
+        <strong>Abreviações ou pop-ups</strong>
+        <li>Usa-se a tag &lt;abbr&gt;, dentro dela, no parâmetro <em>title</em> colocamos o significado da abreviação que colocamos.</li>
+        <br>
+        <strong>Listas</strong>
+        <li>Para listas ordenadas, ou seja, onde a ordem importa, usa-se a tag &lt;ol&gt;.</li>
+        <li>Para listas onde a ordem não importa, usa-se a tag &lt;ul&gt;.</li>
+        <li>é possível personalizar o tipo de lista usando o atributo <em>type</em> dentro do comando da lista, sendo possível criar listas numéricas, alfabéticas ou em números romanos.</li>
+        <li>Também é possível criar listas de definição por meio da tag &lt;dl&gt;, dentro dessa tag existem dois parâmetros</li>
+        <ul>
+            <li>&lt;dt&gt;: é o termo de definição, ou seja, o termo que vai ser definido.</li>
+            <li>&lt;dd&gt;: é a descrição do termo.</li>
+        </ul>
+        <br>
+    </ul>
+</body>
+</html>

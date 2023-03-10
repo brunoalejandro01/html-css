@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Colocando imagens adaptativas no meu site</h1>
+    <p>
+        08/08/2022
+    </p>
+    <hr>
+    <p>
+        Nessa aula foi ensinado sobre adaptação de imagens para diferentes tamanhos de tela. Uma mesma imagem deve ser adaptada para diferentes tipos de tela, logo é necessário mudar seus tamanhos para que ela se adapte automaticamente. Para isso, vamos usar uma nova tag, a &lt;picture&gt;, dentro dela, vamos usar a tag &lt;img&gt; para colocar as imagens que vamos usar.
+    </p>
+    <p>
+        <b>OBS:</b> dentro da tag &lt;img&gt; vamos usar uma outra tag, a &lt;source:media type&gt;, é nessa tag que vamos conseguir adaptar as imagens para diferentes tamanhos de tela. Dentro da tag &lt;source&lt; vamos colocar a opção de largura no máximo e sempre deixando uma margem de 50 a mais em relação ao tamanho da imagem. Além disso, dentro da opção <i>srcset</i> coloca-se o nome da pasta e o nome da imagem utilizada e no <i>type</i> coloca-se o tipo da imagem, png, por exemplo.
+    </p>
+    <p>
+        Dentro dos <i>source</i> a lógica é a seguinte, começamos colocando a imagem grande, e supondo que ela seja de tamanho 1000, quando formos colocar o <i>source</i> para a imagem média vamos pensar assim, se o navegador tiver um tamanho de tela menor que 1050 (imagem grande + barra de rolagem), use a imagem média. A mesma lógica serve para o próximo <i>source</i>, se o tamanho da tela for menor que 700 (imagem média + barra de rolagem), use a imagem pequena.
+    </p>
+    <p>
+        <b>OBS:</b> para cada novo &lt;source:media:type&gt; colocado, deve-se colocar esse novo em cima do outros que já estavam no código, nunca colocar depois, e lembrar sempre de seguir uma lógica, começou colocando a imagem grande, então a próxima é a média e por último a pequena.
+    </p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem em tamanho máximo">
+    </picture>
+    <h2>Colocando áudios no meu site</h2>
+    <p>
+        Para conseguir colocar áudios em um site é bastante simples, basta usarmos uma nova tag, a &lt;audio&gt; e, junto com ela, algumas &lt;sources&gt; que vão ajudar com as configurações do áudio.
+    </p>
+    <p>
+        O áudio estará logo abaixo!
+        <br>
+        <audio preload="metadata" controls autoplay>
+            <source src="sons/pray - beats.mp3" type="audio/mpeg">
+            <source src="sons/pray - beats.ogg" type="audio/ogg">
+            <source src="sons/pray - beats.wav" type="audio/wav">
+            <p>
+                Bom, no caso de seu navegador não suportar áudio, você pode baixar o arquivo clicando <a href="sons/pray - beats.mp3" download="pray - beats.mp3" type="audio.mpeg">aqui</a>.
+            </p>
+        </audio>
+        <p>
+            Alguns atributos usados dentro da tag &lt;audio&gt;
+            <ul>
+                <li>
+                    preload: indica se o áudio será pré-carregado ou não e aceita três parâmetros
+                    <ul>
+                    <li><i>metadata:</i> vai carregar apenas as informações sobre o arquivo de áudio, como seu tamanho, a duração, direitos, etc.</li>
+                    <li><i>none:</i> não vai carregar nada até o usuário clicar no botão de play do áudio ou algum script iniciar a reprodução.</li>
+                    <li><i>auto(padrão):</i> vai carregar o arquivo de áudio automaticamente assim que a página for carregada, independente do usuário ter apertado o play ou não.</li>
+                    </ul>
+                </li>
+                <li>controls: vai apresentar a central de controle na tela do site.</li>
+                <li>autoplay: vai iniciar a reprodução do áudio assim que a página for carregada.</li>
+                <li>loop: vai fazer com que o áudio seja reproduzido infinitamente.</li>
+            </ul>
+        </p>
+        <p>
+            <b>OBS:</b> evitar usar arquivos de áudio do tipo <i>wav</i>, pois tais arquivos são grandes e podem deixar o site lento.
+        </p>
+        <small>dica: dentro do Youtube, indo em Youtube Studio, é possível baixar diversos áudios que podem ser usados sem problemas, basta colocar na opção <q>atribuição não é necessária</q>.</small>
+    </p>
+</body>
+</html>

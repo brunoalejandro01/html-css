@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas OL, UL e listas mistas e de definição</title>
+</head>
+<body>
+    <h1>Criação de listas em HTML</h1>
+    <p>02/08/2022</p>
+    <hr>
+    <h2>Listas ordenadas - OL</h2>
+    <p>
+        As listas ordenadas são listas em que a ordem dos objetos presentes na lista importa. 
+        <br>
+        Para criar uma lista ordenada basta usar a tag &lt;ol&gt;, além disso, dentro do comando &lt;ol&gt;, é necessário usar a tag &lt;li&gt;, que vai auxiliar na numeração dos itens da lista, mudando automaticamente os números ou letras em caso de adição ou remoção de um item da lista.
+        <br>
+        <br>
+        exemplo: 
+        <ol> 
+            <li>Acordar</li>
+            <li>abrir a janela</li>
+            <li>beber água</li>
+            <li>banheiro</li>
+            <li>merendar</li>
+            <li>tomar uma</li>
+        </ol>
+        Além disso, dentro da lista, podemos mudar o seu tipo de organização, mudando uma lista numerada para uma lista organizada por letras ou algarismo romanos. Para isso, fazemos uso da palavra reservada <q>type</q> dentro do comando &lt;ol&gt;. No mais, também podemos começar a partir de um número diferente de 1, usando a palavra reservada <q>start</q> dentro da tag &lt;ol&gt;. 
+    </p>
+    <h2>Listas não ordenadas - UL</h2>
+    <p>
+        Nesse tipo de lista a ordem não importa, ela serve para fazer demarcações, ou somente para listar itens, por exemplo. Para utilizar esse tipo de lista, basta usar a tag &lt;ul&gt; acompanhada da tag &lt;li&gt;. 
+        <br>
+        <br>
+        exemplo:
+        <ul type="square" >
+            <li>vermelho</li>
+            <li>azul</li>
+            <li>verde</li>
+            <li>preto</li>
+        </ul>
+        <br>
+        Esse tipo de lista também pode ser personalizada por meio do comando "type", dando as opções: <q>disc</q>, <q>circle</q>, <q>square</q>. 
+    </p>
+    <hr>
+    <p>03/08/2022</p>
+    <h2>Listas mistas</h2>
+    <p>
+        Listas mistas são listas em que ocorre a junção de listas do tipo &lt;ol&gt; e &lt;ul&gt;, na qual dentro de uma &lt;ol&gt; podemos ter uma &lt;ul&gt; e vice versa.
+    </p>
+    <p>
+        Aqui abaixo contém um exemplo de lista mista usando &lt;ol&gt; dentro de outros &lt;ol&gt;
+        <br>
+        exemplo: meus jogos favoritos
+        <ol>
+            <li>Antigos
+                <ol>
+                    <li>GTA - San Andreas</li>
+                    <li>Black</li>
+                    <li>Brasfoot</li>
+                    <li>Club penguin</li>
+                    <li>Mundo gaturro</li>
+                </ol>
+            </li>
+            <li>Novos
+                <ol>
+                    <li>The witcher</li>
+                    <li>GTA 5</li>
+                    <li>BF4</li>
+                    <li>Far cry 3</li>
+                </ol>
+            </li>
+        </ol>
+    </p>
+    <p>
+        Aqui abaixo conterá uma lista mista usando &lt;ul&gt; dentro de &lt;ol&gt;
+        <br>
+        exemplo: meus cantores/as favoritos/as 
+        <ol>
+            <li>Taylor Swift</li>
+            <ul type="disc">
+                <li>Exile</li>
+                <ul type="circle">
+                    <li>minha preferida</li>
+                </ul>
+                <li>All to well</li>
+                <li>Getaway car</li>
+            </ul>
+            <li>Harry Styles</li>
+            <ul type="disc">
+                <li>Falling</li>
+                <li>Matilda</li>
+                <li>Sweet creature</li>
+            </ul>
+        </ol>
+    </p>
+    <h2>Lista de definição</h2>
+    <p>
+        Esse tipo de lista funciona como se fosse um dicionário. Ela usa as tags &lt;dl&gt;, de definition list, e dentro da &lt;dl&gt; tem outras duas tags, a &lt;dt&gt;, que serve para o termo, e a &lt;dd&gt;, que serve para descrição do termo.
+    </p>
+    <p>
+        exemplo:
+        <dl>
+            <dt>GTA</dt>
+            <dd>Grand Theft Auto.</dd>
+            <br>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+        </dl>
+    </p>
+    <h3>Atalho</h3>
+    <p>
+        Podemos colocar o curso do mouse entre as letras de uma tag e, segurando a tecla Alt, podemos ir selecionando varias tags para apagar uma letra específica da palavra, no caso de querer mudar, por exemplo, de &lt;ol&gt; para &lt;ul&gt;. 
+    </p>
+</body>
+</html>
